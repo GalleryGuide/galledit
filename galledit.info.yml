@@ -1,0 +1,18 @@
+name: Gallery Guide Editing
+type: theme
+description: Content editing theme for The Gallery Guide
+package: Other
+core: 8.x
+libraries:
+  - galledit/global-styling
+
+base theme: gall
+
+regions:
+  preheader: Pre-Header
+  header: Header
+  navbar: Navigation Bar        
+  content_top: Content Top              
+  content: Main Content
+  footer: Footer
+  postfooter: Post-Footer
