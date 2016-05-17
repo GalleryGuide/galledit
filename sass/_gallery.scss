@@ -1,16 +1,24 @@
+.field--name-field-website,
+.field--name-field-email {
+  @include inline-field;
+}
+
 .field--type-geolocation,
 .field--type-address {
   @include breakpoint($laptop) {
     display: inline-block;
+    vertical-align: top;
     width: 29em;
     min-height: 20em;
     margin-right: 1em;
   }
-  background: $white;
+}
+
+.field--type-geolocation {
+  margin-top: .45em;
 }
 
 .field--type-address {
-
   .form-no-label {
 
   }

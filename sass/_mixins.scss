@@ -1,0 +1,8 @@
+@mixin inline-field {
+  @include breakpoint($laptop) {
+    display: inline-block;
+    margin-right: 1em;
+    max-width: 49%;
+    vertical-align: top;
+  }
+}

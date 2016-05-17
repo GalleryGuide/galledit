@@ -1,22 +1,10 @@
-// TODO: Not sure where this comes from...
-.field--type-language {
-  display: none;
-}
-
 .field--name-artists,
 .field--name-tags,
 .field--type-decimal,
 .field--type-datetime {
-//  @include breakpoint($laptop) {
-    display: inline-block;
-    margin-right: 1em;
-//  }
+  @include inline-field;
 }
 
 .field--name-field-date-to {
   @include float-fix;
-}
-
-.form-number {
-  width: 8em;
 }
