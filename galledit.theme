@@ -63,7 +63,11 @@ function galledit_theme_suggestions_node_alter(array &$suggestions, array $varia
  * Implements hook_preprocess_HOOK() for Block document templates.
  */
 function galledit_preprocess_block(array &$variables) {
-
+  if ($variables['attributes']['id'] == 'block-sitebranding') {
+    // Use the logo from the main theme.
+    $site_logo = str_replace('galledit', 'gall', $variables['site_logo']);
+    $variables['site_logo'] = str_replace('.svg', '.png', $site_logo);
+  }
 }
 
 /**
