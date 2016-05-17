@@ -16,6 +16,10 @@
 
 .field--type-geolocation {
   margin-top: .45em;
+
+  .form-item {
+    margin-top: 0;
+  }
 }
 
 .field--type-address {
