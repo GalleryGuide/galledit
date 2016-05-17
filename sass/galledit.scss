@@ -1,4 +1,13 @@
+@import '../../gall/bower_components/breakpoint-sass/stylesheets/breakpoint';
+
+
+@import '../../gall/sass/base/breakpoints';
+@import '../../gall/sass/utils/variables';
+@import '../../gall/sass/utils/mixins';
+
+@import 'fields/fields';
 @import 'fields/images';
+@import 'fields/openingtimes';
 
 @import 'gallery';
 @import 'exhibition';

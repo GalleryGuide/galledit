@@ -1,0 +1,19 @@
+.field--type-geolocation,
+.field--type-address {
+  @include breakpoint($laptop) {
+    display: inline-block;
+    width: 29em;
+    min-height: 20em;
+    margin-right: 1em;
+  }
+  background: $white;
+}
+
+.field--type-address {
+
+  .form-no-label {
+
+  }
+}
+
+
