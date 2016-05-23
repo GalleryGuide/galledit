@@ -1,10 +1,16 @@
 .field--name-artists,
 .field--name-tags,
 .field--type-decimal,
-.field--type-datetime {
+.field--type-datetime,
+.field--name-field-images {
   @include inline-field;
 }
 
+.field--name-field-admission-std,
+.field--name-tags {
+  margin-right: 5em;
+}
+
 .field--name-field-date-to {
-  @include float-fix;
+  @include inline-clear;
 }

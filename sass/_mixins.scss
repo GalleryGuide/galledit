@@ -6,3 +6,11 @@
     vertical-align: top;
   }
 }
+
+@mixin inline-clear {
+  &:after {
+    display: block;
+    content: '';
+    width: 100vw;
+  }
+}
