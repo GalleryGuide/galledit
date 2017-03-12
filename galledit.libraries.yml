@@ -2,3 +2,5 @@ global-styling:
   css:
     theme:
       css/galledit.css: {}
+  js:
+    js/galledit.js: {}
