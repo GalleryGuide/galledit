@@ -1,0 +1,115 @@
+/**
+ * Colours.
+ */
+.description {
+  margin-top: .25em; }
+
+.form-url {
+  max-width: 20em; }
+
+.field--type-language,
+.field--name-body .filter-wrapper {
+  display: none; }
+
+.form-checkboxes .form-item {
+  display: inline-block;
+  min-width: 5em;
+  margin-right: 1em; }
+
+.form-number {
+  width: 8em; }
+
+.dropbutton-multiple .dropbutton .dropbutton-action .form-submit {
+  margin: 0;
+  padding: .5em; }
+
+.draggable * {
+  box-sizing: content-box; }
+
+.js .tabledrag-toggle-weight-wrapper {
+  display: none; }
+
+.field--name-field-images:after {
+  display: block;
+  content: '';
+  width: 100vw; }
+
+.field--type-office-hours th {
+  display: none; }
+  .field--type-office-hours th:first-child {
+    display: inline-block; }
+
+.field--type-office-hours tr,
+.field--type-office-hours td {
+  display: block;
+  float: left;
+  margin-right: 1em; }
+
+.field--type-office-hours tr.odd {
+  clear: left; }
+  .field--type-office-hours tr.odd td:first-child {
+    min-width: 7em; }
+
+.field--type-office-hours td:nth-child(2) {
+  margin-right: .25em; }
+  .field--type-office-hours td:nth-child(2):after {
+    content: '\2014'; }
+
+@media (min-width: 900px) {
+  .field--name-field-website,
+  .field--name-field-email {
+    display: inline-block;
+    margin-right: 1em;
+    max-width: 49%;
+    vertical-align: top; } }
+
+@media (min-width: 900px) {
+  .field--type-geolocation,
+  .field--type-address {
+    display: inline-block;
+    vertical-align: top;
+    width: 29em;
+    min-height: 20em;
+    margin-right: 1em; } }
+
+.field--type-geolocation {
+  margin-top: .45em;
+  clear: left; }
+  .field--type-geolocation .form-item {
+    margin-top: 0; }
+
+.field--widget-address-blank {
+  visibility: hidden; }
+
+@media (min-width: 900px) {
+  .field--name-artists,
+  .field--name-tags,
+  .field--type-datetime,
+  .field--name-field-images {
+    display: inline-block;
+    margin-right: 1em;
+    max-width: 49%;
+    vertical-align: top; } }
+
+.field--name-field-admission-std,
+.field--name-tags {
+  margin-right: 5em; }
+
+.field--name-field-date-to:after {
+  display: block;
+  content: '';
+  width: 100vw; }
+
+.field--name-field-born,
+.field--name-field-died {
+  width: auto;
+  margin-right: 2em; }
+  @media (min-width: 900px) {
+    .field--name-field-born,
+    .field--name-field-died {
+      display: inline-block;
+      margin-right: 1em;
+      max-width: 49%;
+      vertical-align: top; } }
+
+/*# sourceMappingURL=galledit.css.map */
