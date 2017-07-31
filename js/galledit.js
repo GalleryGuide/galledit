@@ -5,7 +5,8 @@
   Drupal.behaviors.gallAddress = {
     attach: function (context, settings) {
       var $addressWrapper = $('#edit-field-address-wrapper');
-      $('.geocode-controls-wrapper input').change(function() {
+
+      $('.geocode-controls-wrapper').on('blur', 'input', function() {
         $addressWrapper.css('visibility', 'visible');
       });
     }
