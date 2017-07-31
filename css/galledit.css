@@ -78,9 +78,6 @@
   .field--type-geolocation .form-item {
     margin-top: 0; }
 
-.field--widget-address-blank {
-  visibility: hidden; }
-
 @media (min-width: 900px) {
   .field--name-artists,
   .field--name-tags,
