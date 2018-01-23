@@ -55,6 +55,9 @@
   .field--type-office-hours td:nth-child(2):after {
     content: '\2014'; }
 
+.field--type-office-hours .form-text {
+  display: none; }
+
 @media (min-width: 900px) {
   .field--name-field-website,
   .field--name-field-email {
