@@ -1,0 +1,6 @@
+{
+    "name": "galleryguide/galledit",
+    "description" : "Drupal 8 editing theme for The Gallery Guide",
+    "type": "drupal-theme",
+    "license": "UNLICENSED"
+}
