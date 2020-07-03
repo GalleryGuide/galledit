@@ -24,7 +24,8 @@
   padding: .5em; }
 
 .draggable * {
-  box-sizing: content-box; }
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
 
 .js .tabledrag-toggle-weight-wrapper {
   display: none; }
@@ -36,8 +37,9 @@
 
 .field--type-office-hours th {
   display: none; }
-  .field--type-office-hours th:first-child {
-    display: inline-block; }
+
+.field--type-office-hours th:first-child {
+  display: inline-block; }
 
 .field--type-office-hours tr,
 .field--type-office-hours td {
@@ -47,13 +49,15 @@
 
 .field--type-office-hours tr.odd {
   clear: left; }
-  .field--type-office-hours tr.odd td:first-child {
-    min-width: 7em; }
+
+.field--type-office-hours tr.odd td:first-child {
+  min-width: 7em; }
 
 .field--type-office-hours td:nth-child(2) {
   margin-right: .25em; }
-  .field--type-office-hours td:nth-child(2):after {
-    content: '\2014'; }
+
+.field--type-office-hours td:nth-child(2):after {
+  content: '\2014'; }
 
 .field--type-office-hours .form-text {
   display: none; }
@@ -78,8 +82,9 @@
 .field--type-geolocation {
   margin-top: .45em;
   clear: left; }
-  .field--type-geolocation .form-item {
-    margin-top: 0; }
+
+.field--type-geolocation .form-item {
+  margin-top: 0; }
 
 @media (min-width: 900px) {
   .field--name-artists,
@@ -104,12 +109,13 @@
 .field--name-field-died {
   width: auto;
   margin-right: 2em; }
-  @media (min-width: 900px) {
-    .field--name-field-born,
-    .field--name-field-died {
-      display: inline-block;
-      margin-right: 1em;
-      max-width: 49%;
-      vertical-align: top; } }
+
+@media (min-width: 900px) {
+  .field--name-field-born,
+  .field--name-field-died {
+    display: inline-block;
+    margin-right: 1em;
+    max-width: 49%;
+    vertical-align: top; } }
 
 /*# sourceMappingURL=galledit.css.map */
