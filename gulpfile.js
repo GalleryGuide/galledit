@@ -47,9 +47,9 @@ gulp.task('scss-lint', function () {
   return gulp.src('sass/**/*.scss')
     .pipe($.cached($.scssLint))
     .pipe($.scssLint({
-      'config': 'scss-lint.yml'
+      'config': '../gall/scss-lint.yml'
     }));
 });
 
 // Default - initial compile and watch.
-gulp.task('default', gulp.series('sass'));
+gulp.task('default', gulp.series('sass', 'scss-lint'));
