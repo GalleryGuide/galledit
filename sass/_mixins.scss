@@ -8,9 +8,9 @@
 }
 
 @mixin inline-clear {
-  &:after {
+  &::after {
     display: block;
-    content: '';
     width: 100vw;
+    content: '';
   }
 }

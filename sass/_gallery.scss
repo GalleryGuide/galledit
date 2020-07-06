@@ -7,21 +7,22 @@
 .field--type-address {
   @include breakpoint($laptop) {
     display: inline-block;
-    vertical-align: top;
     width: 29em;
-    min-height: 20em;
     margin-right: 1em;
+    vertical-align: top;
+    min-height: 20em;
   }
 }
 
 .field--type-geolocation {
-  margin-top: .45em;
   clear: left;
+  margin-top: .45em;
 
   .form-item {
     margin-top: 0;
   }
 }
+
 //
 //.field--widget-address-blank {
 //  visibility: hidden;
