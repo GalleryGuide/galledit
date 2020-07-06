@@ -1,38 +1,40 @@
 .field--type-office-hours {
   th {
     display: none;
+  }
+
+  td {
+    display: inline-block;
+    margin: 0 1em 1em 0;
 
     &:first-child {
-      display: inline-block;
+      min-width: 7em;
+    }
+
+    // From time.
+    &:nth-child(2) {
+      margin-right: 2em;
     }
   }
 
-  tr,
-  td {
-    display: block;
-    float: left;
-    margin-right: 1em;
-  }
-
-  tr.odd {
-    clear: left;
-
-    td {
-      &:first-child {
-        min-width: 7em;
-      }
-    }
-  }
-
-  td:nth-child(2) {
-    margin-right: .25em;
-
-    &:after {
-      content: '\2014'; // Em dash
-    }
-  }
-
+  // Hide the comments field.
   .form-text {
     display: none;
   }
+}
+
+@include breakpoint($mobile-only) {
+  .field--type-office-hours {
+    td {
+      display: block;
+    }
+  }
+}
+
+.office-hours-add-link,
+.office-hours-delete-link,
+.office-hours-copy-link {
+  @include button-secondary;
+  font-size: .8rem;
+  text-decoration: none;
 }
