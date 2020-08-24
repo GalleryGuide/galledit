@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<form{{ attributes }}>
+  {{ children.title }}
+  <div class="gallery__details__contact">
+    {{ children.field_website }}
+  </div>
+
+  {{ children|without('title', 'field_website') }}
+</form>

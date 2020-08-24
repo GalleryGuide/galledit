@@ -13,8 +13,8 @@
 
 .form-checkboxes .form-item {
   display: inline-block;
-  min-width: 5em;
-  margin-right: 1em; }
+  margin-right: 1em;
+  min-width: 5em; }
 
 .form-number {
   width: 8em; }
@@ -30,37 +30,52 @@
 .js .tabledrag-toggle-weight-wrapper {
   display: none; }
 
-.field--name-field-images:after {
+.field--name-field-images::after {
   display: block;
-  content: '';
-  width: 100vw; }
+  width: 100vw;
+  content: ''; }
 
 .field--type-office-hours th {
   display: none; }
 
-.field--type-office-hours th:first-child {
-  display: inline-block; }
-
-.field--type-office-hours tr,
 .field--type-office-hours td {
-  display: block;
-  float: left;
-  margin-right: 1em; }
+  display: inline-block;
+  margin: 0 1em 1em 0; }
 
-.field--type-office-hours tr.odd {
-  clear: left; }
-
-.field--type-office-hours tr.odd td:first-child {
+.field--type-office-hours td:first-child {
   min-width: 7em; }
 
 .field--type-office-hours td:nth-child(2) {
-  margin-right: .25em; }
-
-.field--type-office-hours td:nth-child(2):after {
-  content: '\2014'; }
+  margin-right: 2em; }
 
 .field--type-office-hours .form-text {
   display: none; }
+
+@media (min-width: 0) and (max-width: 480px) {
+  .field--type-office-hours td {
+    display: block; } }
+
+.office-hours-add-link,
+.office-hours-delete-link,
+.office-hours-copy-link {
+  display: inline-block;
+  margin: 0 .5em .5em 0;
+  padding: .5em;
+  background: #eee;
+  color: #000;
+  border: 0;
+  -webkit-box-shadow: 0 2px 2px 0 #666;
+          box-shadow: 0 2px 2px 0 #666;
+  font-size: .8rem;
+  text-decoration: none; }
+
+.office-hours-add-link:hover, .office-hours-add-link:focus,
+.office-hours-delete-link:hover,
+.office-hours-delete-link:focus,
+.office-hours-copy-link:hover,
+.office-hours-copy-link:focus {
+  background: #ccc;
+  text-decoration: underline; }
 
 @media (min-width: 900px) {
   .field--name-field-website,
@@ -74,14 +89,14 @@
   .field--type-geolocation,
   .field--type-address {
     display: inline-block;
-    vertical-align: top;
     width: 29em;
-    min-height: 20em;
-    margin-right: 1em; } }
+    margin-right: 1em;
+    vertical-align: top;
+    min-height: 20em; } }
 
 .field--type-geolocation {
-  margin-top: .45em;
-  clear: left; }
+  clear: left;
+  margin-top: .45em; }
 
 .field--type-geolocation .form-item {
   margin-top: 0; }
@@ -100,10 +115,10 @@
 .field--name-tags {
   margin-right: 5em; }
 
-.field--name-field-date-to:after {
+.field--name-field-date-to::after {
   display: block;
-  content: '';
-  width: 100vw; }
+  width: 100vw;
+  content: ''; }
 
 .field--name-field-born,
 .field--name-field-died {
