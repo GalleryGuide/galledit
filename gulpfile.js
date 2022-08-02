@@ -51,5 +51,7 @@ gulp.task('scss-lint', function () {
     }));
 });
 
+gulp.task('build', gulp.series('sass'));
+
 // Default - initial compile and watch.
 gulp.task('default', gulp.series('sass', 'scss-lint'));
