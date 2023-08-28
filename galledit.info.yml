@@ -2,7 +2,7 @@ name: Gallery Guide Editing
 type: theme
 description: Content editing theme for The Gallery Guide
 package: Other
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9 || ^10
 libraries:
   - galledit/global-styling
 
